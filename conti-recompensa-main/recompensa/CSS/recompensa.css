@@ -1,0 +1,322 @@
+.title {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body {
+	margin: 0 auto;
+	padding: 0;
+}
+#encabezado {
+	font-size: 16px;
+}
+.title2 {
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 20px;
+}
+
+.select {
+	display: block;
+	margin-left: 20%;
+
+	float: left;
+	height: 25px;
+	width: 60%;
+	border-radius: 10px;
+}
+.containe {
+	display: flex;
+	justify-content: center;
+	padding: 30px;
+}
+.recompensa {
+	display: flex;
+}
+#textico {
+	display: flex;
+}
+
+.texto {
+	border-radius: 15px;
+	margin-left: 13px;
+	margin-right: 13px;
+}
+.textl {
+	border-radius: 15px;
+
+	height: 40%;
+	border: none;
+	display: flex;
+}
+.btn {
+	margin-left: 13px;
+	margin-right: 13px;
+}
+.parrafo {
+	color: blueviolet;
+	bottom: 50px;
+	margin-left: 13px;
+	margin-right: 13px;
+	position: relative;
+	bottom: -10px;
+}
+
+#btn-modal {
+	display: none;
+}
+
+.container-modal {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(144, 148, 150, 0.8);
+	display: none;
+	justify-content: center;
+
+	align-items: center;
+	z-index: 100;
+}
+
+.content-modal {
+	width: 500%;
+	max-width: 700px;
+
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 4px;
+}
+.content-modal h3 {
+	margin-bottom: 15px;
+}
+.content-modal .btn-cerrar {
+	width: 100%;
+	margin-top: 15px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.content-modal .btn-cerrar label {
+	padding: 7px 10px;
+	background-color: #3498db;
+	color: #fff;
+	border-radius: 4px;
+
+	cursor: pointer;
+	transition: all 300ms ease;
+}
+.content-modal .btn-cerrar label:hover {
+	background-color: #185e83;
+}
+
+#btn-modal:checked ~ .container-modal {
+	display: flex;
+}
+.cerrar-modal {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+/*boton modal*/
+.boton-modal {
+	background-color: #fff;
+}
+.boton-modal label {
+	padding: 8px;
+	display: flex;
+	background-color: #3498db;
+	color: black;
+	border-radius: 14px;
+	cursor: pointer;
+	transition: all 300ms ease;
+}
+.boton-modal label:hover {
+	background-color: #3498db;
+}
+
+/*tabs*/
+.tab-container {
+	/*width*/
+	height: 400px;
+	box-shadow: 10px;
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+.options {
+	display: flex;
+
+	width: 100%;
+	height: 45px;
+	list-style: none;
+}
+
+.option {
+	flex-grow: 1;
+	text-align: center;
+	line-height: 60px;
+	border: 1px rgba(4, 51, 78, 6);
+	color: black;
+	cursor: pointer;
+}
+.option-active {
+	background: #cfd8dc;
+	border-bottom: 1px rgba(7, 63, 95, 4);
+}
+.contents {
+	width: 100%;
+	height: 85%;
+	display: flex;
+}
+
+.content {
+	width: 100%;
+	height: 90%;
+	color: black;
+	display: none;
+	padding: 30px;
+}
+.content-active {
+	background: #cfd8dc;
+	display: block;
+	display: grid;
+	grid-column: 4;
+	grid-row: 5/ 9;
+}
+.content h3 {
+	text-align: center;
+	padding-bottom: 10px;
+	border-bottom: solid 1px;
+	letter-spacing: 2px;
+	margin: 10px;
+}
+/*inputs*/
+.valor {
+	display: block;
+	height: 25px;
+	width: 20%;
+	border-radius: 10px;
+}
+
+/*organizador por columnas de los inputs
+*/
+.columnas {
+	display: block;
+    justify-content: right;
+	height: 102px;
+	margin-top: -9%;
+	margin-left: 80%;
+}
+
+.columna2 {
+	display: block;
+}
+.columna {
+	display: block;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+/*cards*/
+
+
+
+
+.cards_container {
+	position: relative;
+	margin-top: 50px;
+	box-sizing: border-box;
+	width: 350px;
+	height: 200px;
+	border: 3px solid rgb(85, 85, 85);
+	margin-left: 10px;
+	border-radius: 25px;
+	overflow: hidden;
+}
+
+.card_name {
+	
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 10px;
+}
+
+.card_img {
+	
+	filter: brightness(30%);
+	width: 100%;
+	height: 100%;
+}
+
+
+/* toggle color card*/
+
+.toggle_card_img{
+	filter: brightness(100%);
+    width: 100%;
+	height: 100%;
+}
+
+
+
+
+/*barra de seleccion de accion*/
+
+.selecion {
+	position: absolute;
+	top: 10px;
+	left: 70%;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 10px;
+}
+/*switch in cards*/
+
+.boton {
+	position: absolute;
+	margin: 10px;
+	top: 10px; 
+	left: 60%; 
+}
+
+
+.lbl-switch {
+	display: inline-block;
+	width: 55px;
+	height: 30px;
+	background: #aaa;
+	border-radius: 100px;
+	position: relative;
+	cursor: pointer;
+	bottom: -100px;
+
+	margin-left: 75%;
+}
+#btn-switch:checked ~ .lbl-switch {
+	background: #1abc9c;
+}
+.lbl-switch::after {
+	position: absolute;
+	content: '';
+	width: 22px;
+	height: 22px;
+	background: #fff;
+	border-radius: 100px;
+	top: 4px;
+	left: 5px;
+	transition: 0.3s;
+}
+#btn-switch:checked ~ .lbl-switch::after {
+	left: 28px;
+}
+#btn-switch {
+	display: none;
+}
+
+/*adaptabilidad*/

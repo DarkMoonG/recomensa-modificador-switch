@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Admin Dashboard | Korsat X Parmaga</title>
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/recompensa.css">
+    
+    
+
+       <!-- font awesome cdn link  -->
+   
+   
+
+    <!-- custom js file link  -->
+   
+    
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                      <span class="icon"> <ion-icon name="medal-outline"></ion-icon></span>
+                      <span class= "title">EN QUE TU TA</span>
+                    </a>
+                  </li>
+                  <li>
+                      <a href="/index.html">
+                         <span class="icon"><ion-icon name="home-outline"></ion-icon> </span>
+                          <span class= "title">FIDELIZACION</span>
+                      </a>   
+                  </li>        
+                  <li>
+                      <a href="puntos.html">
+                          <span class="icon"><ion-icon name="star-half-outline"></ion-icon></span>
+                          <span class="title">Puntos</span>
+                      </a>
+                  </li>
+                  
+                  <li>
+                      <a href="stamps.html">
+                          <span class="icon"><ion-icon name="checkbox-outline"></ion-icon></span>
+                          <span class="title">Stamps</span>
+                      </a>
+                  </li>
+      
+                  <li>
+                      <a href="recompensa.html">
+                          <span class="icon"><ion-icon name="trophy-outline"></ion-icon></span>
+                          <span class="title">Recompensa</span>
+                      </a>
+                  </li>
+      
+                  <li>
+                      <a href="">
+                          <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                          <span class="title">Referidos</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="">
+                          <span class="icon"><ion-icon name="game-controller-outline"></ion-icon></span>
+                          <span class="title">Gamificacion</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="">
+                          <span class="icon"><ion-icon name="gift-outline"></ion-icon></span>
+                          <span class="title">Gif card</span>
+                      </a>
+                  </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search here">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+
+                <div class="user">
+                    <img src="assets/imgs/customer02.jpg" alt="">
+                </div>
+            </div>
+
+            <!-- ======================= Cards ================== -->
+            
+            <div class="containe">
+                <div class="recompensa texto">
+                    <h2 class>Lista de recompensa</h2>
+                <input type="text" placeholder="Total: 0" class="texto" >
+                </div>
+                
+                <div class="boton-modal btn">
+                    <label for="btn-modal">
+                        Crear recompensa
+                    </label>
+                    
+                  
+                </div>
+                <p class="parrafo">Establecimiento : Salon Euphoria</p>
+                <!--button-->
+                <input type="checkbox" id="btn-modal">
+                    <div class="container-modal">
+                        
+                        <div class="content-modal">
+                            <div class="btn-cerrar">
+                                <label for="btn-modal">X</label>
+                            </div>
+                           <div class="title2">
+                                <label id="encabezado">Nombre de la recompensa</label>
+                            <input type="text"  size="20">
+                            </div>
+                           
+                                
+                            
+                            <div class="tab-container">
+                                
+                                <div action="">
+                                <ul class="options">
+                                    <li id="option1" class="option option-active">
+                                        Productos</li>
+                                    <li id="option2"class="option">Servicios </li>
+                                </ul>
+                                <div class="contents">
+                                    <div id="content1" class="content content-active ">
+                                        <div class="columna">
+                                         <label for=""> Seleccione el producto </label>
+                                         <select  class="select">
+                                          <option value="">...</option>
+                                         </select>
+                                        </div>
+                                        
+                                        <div class="columna2">
+                                         <label for=""> Valor</label>
+                                        <select name=""  class="valor">
+                                         <option value="">...</option>
+                                        </select>
+                                        </div>
+                                        <div class="columnas">
+                                         <label for=""> Fecha </label>
+                                         <input type="date" class="textl">
+ 
+                                        </div>
+                                        <div class="columnas3 ">
+                                         <label for=""> Subir imagen</label>
+                                         <input  type="file">
+ 
+                                        <div class="btn-cerrar">
+                                         <label for="btn-modal">Crear</label>
+                                        </div>
+                                        </div>
+ 
+                                        
+ 
+     
+                                    </div>
+                                    
+    
+                                    
+                                    <div id="content2" class="content content-active ">
+                                       <div class="columna">
+                                        <label for=""> Seleccione el producto</label>
+                                        <select name="" id="" class="select">
+                                         <option value="">...</option>
+                                        </select>
+                                       </div>
+                                       
+                                       <div class="columna2">
+                                        <label for=""> Valor </label>
+                                       <select   class="valor">
+                                        <option value="">...</option>
+                                       </select>
+                                       </div>
+                                       <div class="columnas">
+                                        <label for=""> Fecha</label>
+                                       <input type="date" class="textl">
+
+                                       </div>
+                                       <div class="columnas3">
+                                        <label for=""> Subir imagen</label>
+                                        <input type="file">
+
+                                       <div class="btn-cerrar">
+                                        <label for="btn-modal">Crear</label>
+                                       </div>
+                                      </div>
+
+                                       
+
+    
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            
+        
+                        </div>
+                        <label for="btn-modal" class="cerrar-modal"></label>
+                    </div>
+                </div>  
+                <!--Cards de recompensa-->
+               <div class="cards_container">
+                   
+                   <img class="card_img" src="assets/pintado.jpeg" alt="img-card"  />
+                   <h3 class="card_name">Pintado de uñas</h3>
+                 <select name="" id="" class="selecion">
+                      <option value="">acciones</option>
+                 </select>
+                 
+                 <div class="boton ">
+                    <input type="checkbox" id="btn-switch">
+                    <label for="btn-switch" class="lbl-switch"></label>
+                  
+                </div>
+
+
+
+                    
+                   <div class="card">
+                        
+                   </div>
+                       
+                      
+               </div> <!-- fin card-->
+                       
+               </div>
+                </div>
+
+           
+
+            </div>
+            <!-- ================ Order Details List ================= -->
+            
+            
+
+            
+
+
+
+
+
+        
+        </div>
+       
+
+    <!-- =========== Scripts =========  -->
+    <script src="script.js"></script>
+    
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</body>
+
+</html>
